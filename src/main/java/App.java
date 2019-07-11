@@ -10,5 +10,13 @@ public class App {
         iphone.makeCall("i am an iphone");
         androidMobile.makeCall("i am an androidMobile");
         androidMobile.printInfo();
+
+        Person person = new Person(androidMobile, "eric.li");
+        person.sendMessage("i sent message by androidMobile");
+        person.sendMessage("i sent a long message by androidMobile may can not be sent");
+
+        person.changePhone(iphone);
+        person.sendMessage("i sent message by iphoneMobile");
+        person.sendMessage("i sent a long message by iphoneMobile may can not be sent");
     }
 }

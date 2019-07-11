@@ -36,6 +36,10 @@ public class Mobile{
     }
 
     public void makeCall(String message){
-        System.out.println("Message : " + message);
+        if (message.length() > 20) {
+            System.out.println("Message cannot be sent");
+        } else {
+            System.out.println("Message : " + message);
+        }
     }
 }

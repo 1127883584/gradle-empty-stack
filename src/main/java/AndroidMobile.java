@@ -5,7 +5,11 @@ public class AndroidMobile extends Mobile {
     }
 
     public void makeCall(String message) {
-        System.out.println("<Andriod>Message : " + message);
+        if (message.length() > 40) {
+            System.out.println("<Android>Message cannot be sent");
+        } else {
+            System.out.println("<Android>Message : " + message);
+        }
     }
 
     public void printInfo() {
