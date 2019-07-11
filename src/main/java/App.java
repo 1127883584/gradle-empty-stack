@@ -4,10 +4,11 @@
 public class App {
     public static void main(String[] args) {
         Mobile mobile = new Mobile();
-        Iphone iphone = new Iphone();
-        AndroidMobile androidMobile = new AndroidMobile();
+        Iphone iphone = new Iphone("iphoneX","white","Iphone");
+        AndroidMobile androidMobile = new AndroidMobile("Mix2","black", "Xiaomi");
         mobile.makeCall("i am a mobile");
-        iphone.makeCall("i am a iphone");
-        androidMobile.makeCall("i am a androidMobile");
+        iphone.makeCall("i am an iphone");
+        androidMobile.makeCall("i am an androidMobile");
+        androidMobile.printInfo();
     }
 }
